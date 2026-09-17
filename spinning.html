@@ -141,6 +141,14 @@ header.scrolled{background:rgba(11,12,15,.82);backdrop-filter:saturate(160%) blu
 .ben h3{font-size:1.1rem;margin-bottom:9px}
 .ben p{color:var(--muted);font-size:.93rem}
 
+/* Vídeo */
+.video-wrap{max-width:860px;margin:52px auto 0}
+.video-card{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line-strong);background:#000;box-shadow:0 40px 80px -40px rgba(0,0,0,.9)}
+.video-card video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000;display:block}
+.video-caption{display:flex;align-items:flex-start;justify-content:center;gap:9px;margin-top:16px;color:var(--muted);font-size:.92rem}
+.video-caption svg{width:18px;height:18px;color:var(--red-2);flex:0 0 auto;margin-top:3px}
+.video-caption b{color:#fff;font-weight:700}
+
 /* Galeria */
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .gcard{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:radial-gradient(75% 75% at 50% 40%,#fff,#e9ebee);aspect-ratio:1/1;display:grid;place-items:center;padding:22px;transition:transform .3s var(--ease),border-color .3s}
@@ -396,6 +404,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h3>Treine quando quiser</h3>
         <p>Sua academia em casa, disponível 24h. Aproveite cada janela livre do dia.</p>
       </div>
+    </div>
+    <!-- Vídeo: 3 vantagens da bike de spinning -->
+    <div class="video-wrap reveal">
+      <div class="video-card">
+        <video controls preload="metadata" playsinline>
+          <source src="esteiras1/video/3%20vantagens%20bike%20de%20spinning.mp4" type="video/mp4">
+          Seu navegador não suporta a reprodução de vídeo.
+          <a href="esteiras1/video/3%20vantagens%20bike%20de%20spinning.mp4">Baixar o vídeo</a>.
+        </video>
+      </div>
+      <p class="video-caption">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+        <span><b>3 vantagens da bike de spinning</b> — em menos de um minuto, o que mais pesa na hora de escolher.</span>
+      </p>
     </div>
   </div>
 </section>
